@@ -1,0 +1,99 @@
+
+body {
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    border: none;
+    min-height: 50vh;
+    height: auto;
+    width: 50vh;
+    border-radius: 15px;
+    box-shadow: 5px 6px 7px;
+    background-color: aqua;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.7em;
+    padding: 10px;
+    border-bottom: 3px groove white;
+    margin-bottom: 20px;
+    /* border-style: groove; */
+}
+
+.addTask {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    background-color: cyan;
+    box-shadow: 2px 2px 2px 0px;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+button {
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 15px;
+}
+
+li {
+    color:indigo;
+    font-size: medium;
+    font-weight: 900;
+    display: flex;
+    border: 2px groove white;
+    border-radius: 5px ;
+    padding: 8px;
+    margin-bottom: 7px;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* Styles for devices with a max width of 768px (like phones) */
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .container {
+      width: 100%; /* Make container full width on mobile */
+    }
+  
+    .button {
+      font-size: 16px;
+      padding: 12px;
+    }
+  }
+  
+  /* Styles for devices with a max width of 480px (small phones) */
+  @media screen and (max-width: 480px) {
+    .menu {
+      display: none; /* Hide menu for smaller screens */
+    }
+  
+    .header {
+      font-size: 20px;
+    }
+  }
+  
